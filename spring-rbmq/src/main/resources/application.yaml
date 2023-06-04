@@ -1,0 +1,14 @@
+spring:
+  main.banner-mode: off
+  data:
+    rest.base-path: api/v1
+  rabbitmq:
+    exchange: x.effnox.transfers
+    
+server:
+  port: 9090
+  error:
+    include-stacktrace: never
+    path: /404
+    whitelabel.enabled: false
+  

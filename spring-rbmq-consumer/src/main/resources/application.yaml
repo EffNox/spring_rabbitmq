@@ -1,0 +1,7 @@
+server.port: 9091
+
+spring:
+    main.banner-mode: off
+    rabbitmq:
+        queue: q.effnox.transfers
+

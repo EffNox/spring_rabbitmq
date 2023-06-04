@@ -1,0 +1,14 @@
+@V1 = http://localhost:9090/api/v1
+
+GET {{V1}}/
+
+###~###~###~###~###~###
+POST {{V1}}/transfer?lang=en
+
+{
+  "origin": "{{$guid}}",
+  "destination": "{{$guid}}",
+  "bank": "EffNoxBank",
+  "amount": {{$randomInt 100 580}}.{{$randomInt 0 99}},
+  "expiration": "{{$datetime iso8601}}"
+}
